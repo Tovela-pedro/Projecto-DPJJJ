@@ -1,0 +1,994 @@
+*{
+   
+    font-family: sans-serif;
+     
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+ 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+   
+   
+    body{
+        margin: 0;
+       
+        
+        
+    }
+ .logo{
+    display: flex;  
+     height: 60px;
+     margin-top: 0.5em;
+ }
+ .logo img{
+     width: 50px;
+     height: 50px;
+ }
+ .logocontent{
+    display: block;
+    width: 200px;
+    
+     margin-left:5em;
+     margin-bottom: 30px;
+ }
+ .logo h3{
+     font-size: 1rem;
+     font-family: 'Bebas Neue', cursive;
+     margin-top: 0;
+     margin-bottom: 2px;
+     
+ }
+ .logo h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    margin-top: 0;
+    margin-left: 5px;
+    font-weight: bold;
+ }
+ .hero{
+    
+    position: absolute;
+    
+    background: url(/img/Título\ \(6\).png);
+    background-size: cover;
+    background-position-x: 80%;
+    background-position-y: 20%;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+ }
+ 
+nav {
+    position:fixed;
+    right: 0;
+    top:0;
+    background-color: white;
+    height: 100vh;
+    width: 50%;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 6em;
+  }
+  .open-nav{
+    transform: translateX(0%);
+  }
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0.75em 1em;
+    display: block;
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+  }
+nav a:hover{
+    background-color: #D9D9D9;
+}
+  header svg {
+    margin-top: -.6em;
+    width: 2.7em;
+    cursor: pointer;
+    margin-right: 7px;
+  }
+  header svg path{
+      fill:#586b70;
+  }
+  .close{
+    float: right;
+    margin: 2em;
+    width: 2.5em;
+}
+header{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to left, #d9d9d9 0%, transparent 59%, white 70% )
+}
+ 
+ 
+.first h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: #E4F2E7;
+    font-size: 2rem;
+    padding-left: 10px;
+}
+.first h4{
+    display: flex;
+    color: #ffff;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+.first button{
+    margin-top: 3em;
+    padding: 10px;
+    border-radius: 7px 7px 7px 7px;
+    border: 2px solid #002333;
+    margin-left: 6px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #DEEFE7;
+    font-weight: bolder;
+    color: #002333;
+    cursor: pointer;
+}
+.first button:hover{
+    background-color:#ceeee6ea;
+}
+section svg{
+display: flex;
+margin-top: 50px;
+justify-content: flex-start;
+height: 170px;
+stroke:#deefe7e5;;
+stroke-dasharray:38680; ;
+stroke-dashoffset:0;
+width: 150px;
+    animation: 5s desenha infinite alternate;
+}
+section svg path{
+   
+    stroke-width: 13em;
+    fill: transparent;
+     
+}
+@keyframes desenha{
+    to {
+          /* Inicio: Ponto inicial */
+      stroke-dashoffset:38680; 
+    }
+    from {
+          /* Fim: Altera o início para 0 */
+      stroke-dashoffset: 0;
+    }
+}
+.more-info{
+    margin: 0.5em;
+    padding-top: 4em;
+}
+.more-info img{
+    padding-top: 0.5em;
+    width: 100%;
+    object-fit: cover;
+    height: 13em;
+    border-radius: 8px;
+    
+
+}
+.more-info .card-wrapper{
+    padding-bottom: 10px;
+}
+.more-info .feature{
+    background-color: white;
+    border-radius: 3px;
+    
+    
+    padding: 6px;
+}
+.Lema p{
+    font-family:"Raleway";  
+    font-weight:bold ;
+    font-size: 0.9rem;
+    margin: 0.5em;
+}
+.more-info .title{
+    font-family: 'Poppins', sans-serif;
+    color:#011526;
+     font-weight: bolder;
+    font-size: 1.25rem;
+}
+.more-info .desc{
+    font-family:"Raleway";
+    line-height: 1.5rem;
+    color: black;
+    font-weight: normal;
+}
+main{
+    background-color: #D9D9D9;
+}
+article{
+    margin: 0.5em;
+    padding: 0;
+    box-sizing: border-box;
+}
+article #items-wrapper{
+    width: 100vw;
+    
+}
+
+article #items-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scroll-behavior: smooth;
+}
+article #items{ 
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    
+}
+article .item{
+    flex: none;
+    width: 100%;
+    height: 400px;
+    scroll-snap-align: start;
+    pointer-events: none;
+}
+ 
+article .content h2{
+    font-family: 'Poppins', sans-serif;
+    color: #011F26;
+    display: flex;
+    justify-content: center;
+}
+ 
+article .content p{
+    font-family:"Raleway";
+    display: block;
+    width: 30em;
+   
+}
+article p{
+    font-family:"Raleway";
+    display: block;
+    width: 30em;  
+}
+ 
+footer{
+    height: 35em;
+    background-color: #A5A692;
+}
+.last1 h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder; 
+    color:black;
+    text-decoration: underline;
+}
+footer .last1{
+    display: flex;
+    justify-content: space-between;
+    margin: 00.5em;
+   
+}
+footer .card1 ul{
+     
+    list-style: none;
+    line-height: 2em;
+    
+
+}
+footer .card1 ul li a{
+    font-size: 1.29rem;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-family:"Raleway"; 
+}
+footer .card2 ul li{
+    list-style: none;
+    line-height: 3em;
+    font-family:"Raleway"; 
+
+}
+.Lema p{
+    display: block;
+    color:white;
+    width: 200px;
+    line-height: 1.5rem
+   }
+ .card2 button{
+    cursor: pointer;
+    width: 11em;
+    border: 1px #011F26 solid;
+    height: 3em;
+    background-color:#E4F2E7;
+    border-radius: 4px 0px;
+ }
+ .card2 button:hover{
+    background-color:#ceeee6ea;
+ }
+ .card2 .wpp{
+    margin-left: 10px;
+    font-family:"Raleway"; 
+ }
+ 
+.card2 .fb{
+  height: 23px;
+  margin-left: -15px;  
+}
+.card2 .cell{
+    margin-left: 7px; 
+   
+    font-weight: bold; 
+}
+.card2 span{
+    margin-left: -10px;
+    font-family:"Raleway"; 
+    font-weight: bold;
+}
+footer .last2 h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder; 
+    text-decoration: underline;
+}
+footer .last2 p{
+    font-family:"Raleway"; 
+    line-height: 1.5rem;
+}
+footer .last2{
+    background-color: #f7f8f9;
+   
+}
+footer .conteudo{
+    position:relative;
+     padding: 1em;
+    left: 25%;
+}
+footer .card3 h2 span{
+    font-family:"Raleway"; 
+
+    
+}
+footer .conteudo p{
+    position: relative;
+    left: -15%;
+}
+footer .conteudo span{
+    margin-left: 15%;
+    font-family:"Raleway"; 
+}
+footer .card3 strong{
+    font-family:"Raleway"; 
+    font-weight: bolder;
+     
+}
+footer .conteudo a{
+    margin-left: 20%;
+    font-family:"Raleway"; 
+    color: black;
+    text-decoration: none;
+}
+footer .last2 h2{
+    margin: 1.5em;
+     
+}
+footer .last2 img{
+    height: 10em;
+    width: 10em;
+}
+footer .last3{
+     
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-top: -1em;
+    background-color: #f0f0f0;
+}
+footer .last3 p{
+    font-family:"Raleway"; 
+    font-weight: bold;  
+}
+ .card3 strong{
+    color: #002333;
+ }
+@media only screen and (min-width:200px){
+    .logocontent{
+        display: none;
+        }
+        .first{
+        height: 100vh;
+        width: 100vw;
+    }
+    header{
+        width:100vw;
+    }
+    .hero{
+        height: 100vh;
+        width: 100vw;
+    }
+    .first h2{
+        display: flex;
+        justify-content: center;
+        font-family:'Poppins', sans-serif;
+        font-weight: bolder;
+        color: #E4F2E7;
+        font-size: 1.3rem;
+        padding-left: 10px;
+    }
+    .first h4{
+        font-family: 'Poppins', sans-serif;
+        color: #ffff;
+        display:block;
+        width: 150px;
+        
+        margin: .5em;
+        
+        
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+    .Lema p{
+        display: none; 
+       }
+       section svg{
+        margin-top: 10px;
+        height: 170px;
+        margin-left:-17px;
+       }
+       article .content h2{
+        display: block;
+        width: 9.1em;
+       }
+       article .content p{
+        font-family:"Raleway";
+        display: block;
+        width: 13rem;
+       
+    }
+    article p{
+        font-family:"Raleway";
+        display: block;
+        width: 10em;  
+    }
+    footer .last1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0.2em;
+       
+    }
+    footer .conteudo p{
+        position: relative;
+        left: -15%;
+    }
+    footer .conteudo a{
+        margin-left:0;
+        font-family:"Raleway"; 
+        color: black;
+        text-decoration: none;
+    }
+    footer .conteudo span{
+        margin-left: 0;
+        font-family:"Raleway"; 
+    }
+    footer .conteudo{
+     position: relative;
+    left: 15%;
+    padding: 0.5em;
+    }
+
+}
+@media only screen and (min-width:250px){
+     
+    .first h2{
+        display: flex;
+        justify-content: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+        color: #E4F2E7;
+        font-size: 1.3rem;
+        padding-left: 10px;
+    }
+    .first h4{
+        
+        color: #ffff;
+        display:block;
+        width: 150px;
+        
+        margin: .5em;
+        
+        
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+    .Lema p{
+        display: none; 
+       }
+       section svg{
+        margin-top: 10px;
+        height: 170px;
+        
+
+       }
+       article .content h2{
+        display: block;
+        width: 11em;
+       }
+  
+    footer .last1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1em;
+       
+    }
+    footer .conteudo p{
+        position: relative;
+        left: -15%;
+    }
+    footer .conteudo a{
+        margin-left:0;
+        font-family:"Raleway"; 
+        color: black;
+        text-decoration: none;
+    }
+    footer .conteudo span{
+        margin-left: 0;
+        font-family:"Raleway"; 
+    }
+    
+    footer .conteudo{
+     position: relative;
+    left: 15%;
+    padding: 0.5em;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 320px){
+    
+    .first h4{
+        
+        color: #ffff;
+        display:block;
+        width: 150px;
+        
+        margin: .5em;
+        
+        
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+    .Lema p{
+        display: none; 
+       }
+       section svg{
+        margin-top: 10px;
+        height: 170px;
+
+       }
+       article .content h2{
+        display: block;
+        width: 13em;
+       }
+       article .content p{
+        font-family:"Raleway";
+        display: block;
+        width:21rem;
+       
+    }
+    article p{
+        font-family:"Raleway";
+        display: block;
+        width: 30em;  
+    }
+    footer .last1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1em;
+       
+    }
+    footer .conteudo p{
+        position: relative;
+        left: -27%;
+    }
+    footer .conteudo a{
+        margin-left: 20%;
+        font-family:"Raleway"; 
+        color: black;
+        text-decoration: none;
+    }
+    footer .conteudo span{
+        margin-left: 15%;
+        font-family:"Raleway"; 
+    }
+
+}
+@media only screen and (min-width:430px){
+    .logocontent{
+        display:block;
+        
+        }
+         
+     
+    .first h2{
+        display: flex;
+        margin: 0.5em;
+        justify-content: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+        color: #E4F2E7;
+        font-size: 1.699rem;
+        padding-left: 10px;
+    }
+    .first{
+        height: 100vh;
+        width: 100vw;
+    }
+    .hero{
+        height: 100vh;
+        width: 100vw;
+    }
+    .first h4{
+          margin-left: 4em;
+        font-size: 1.25rem;
+        color: #ffff;
+        font-family: 'Poppins', sans-serif;
+        width: 300px;
+        font-weight: bold;
+    }
+    .Lema p{
+        display:none; 
+       }
+       section svg{
+        margin-top: 100px;
+        height: 170px;
+        
+
+       }
+       
+       article .content h2{
+        display: block;
+        width: 18em;
+       }
+       article .content p{
+        display: block;
+        width: 29em;
+       }
+  
+    footer .last1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1em;
+       
+    }
+    footer .conteudo p{
+        position: relative;
+        left: -14%;
+    }
+    footer .conteudo a{
+        margin-left:3em;
+        font-family:"Raleway"; 
+        color: black;
+        text-decoration: none;
+    }
+  
+  
+    footer .conteudo span{
+        margin-left:2em;
+        font-family:"Raleway"; 
+    }
+    footer .conteudo{
+     position: relative;
+    left: 26%;
+    padding: 0.5em;
+    }
+
+}
+@media only screen and (min-width: 570px){
+   
+
+    
+    .more-info img{
+        height: 17em;
+    }
+    .logocontent{
+         display: block;
+         margin-left: 8em;
+    }
+    footer .last1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+         
+        justify-content: space-around;
+       
+        margin: 1em;
+       
+    }
+
+}
+@media only screen and (min-width: 650px){
+    .logo{
+        margin: 1em 5em;
+    }
+
+    .first{
+        margin: 1.5em 5em;
+         
+    }
+    .more-info img{
+        height: 17em;
+    }
+    .logocontent{
+         display: block;
+    }
+
+}
+@media only screen and (min-width: 800px){
+   .menu{
+    display: none;
+   }
+   nav{
+    transform: translateX(0);
+     
+    display: block;
+    width: auto;
+    height: auto;
+    background:none;
+   }
+   
+   .Lema p{
+    display: block;
+    color: black;
+    width: 200px;
+    margin-top: 2.5em;
+    line-height: 1.5rem
+   }
+   .close{
+    display: none;
+   }
+   nav ul{
+    display: flex;
+    margin: .2em 0.1em;
+   }
+   nav ul a{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.1rem;
+   }
+   nav ul a:hover{
+    background: none;
+    text-decoration: underline;
+   }
+   header{
+    
+    display: flex;
+    justify-content: space-between;
+   }
+   .logo{
+    margin: .5em 2em;
+    }
+    .logocontent{
+   margin-left: 14em; 
+    }
+    footer .last2 h2{
+        margin: 1.5em 6em;
+    }
+    footer .last1{
+        display: flex;
+        justify-content: space-around;
+    }
+    footer .conteudo{
+        position:relative;
+       padding: 1em;
+       left: 38%;
+    }
+    footer .conteudo p{
+        position: relative;
+        left: -15%;
+    }
+    footer .conteudo span{
+        margin-left: 9%;
+        font-family:"Raleway"; 
+    }
+    footer .conteudo a{
+        margin-left: 11%;
+        font-family:"Raleway"; 
+        color: black;
+        text-decoration: none;
+    }
+    article{
+        margin: 0.5em 1em;
+    }
+    article{
+         margin: .5em;
+    }
+    .hero{
+        left: unset;
+        right: 0;
+        width: 50%;
+        height: 42em;
+    }
+    .first h2 {
+        color: black;
+        height: auto;
+        margin: 0;
+        width: 37%;
+    }
+    .first h4 {
+        color: black;
+        height: auto;
+        width: 44%;
+        margin: 0.9em 1em;
+    }
+    section svg{
+        stroke: black;
+
+    }
+    .feature{
+   display: flex;
+   justify-content: center;
+   width: 65em;
+    padding: 1em;
+    margin: 1em;
+    }
+    .card-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    .more-info img{
+        padding-right: 1.5em;
+        padding-top: 0.5em;
+        width: 100%;
+        object-fit: cover;
+        height: 11em;
+        border-radius: 8px;
+        
+    
+    }
+    article .item{
+        flex: none;
+        width: 50%;
+        height: 400px;
+        scroll-snap-align: start;
+        pointer-events: none;
+    }
+    article .content{
+        margin-left: 12em;
+    }
+    article .content h2{
+        display: block;
+        width: 20em;
+       }
+       article .content p{
+        margin-left: -5em;
+        display: block;
+        width: 39em;
+       }
+
+     
+}
+@media only screen and (min-width: 1200px){
+    .logocontent{
+         margin-left:32em;
+         margin-top: 0.5rem;
+        padding-bottom: 1em;
+    } 
+    
+     
+   
+    .first{
+        width: 1200px;
+        margin: 0 auto;
+      }
+      .first h2{
+        margin: 1.5em;
+        font-size: 1.7em;
+        text-transform: uppercase;
+      }
+      .first h4{
+        margin: 2em 4em;
+        font-size: 1.6em;
+      }
+    .hero{
+        width: 45%;
+    }
+    nav{
+       
+        padding-bottom: 1em;
+        margin-top: 0.5em;
+        margin-right:2.2em;
+    }
+    .logo img{
+        padding-bottom: 1em;
+        margin-top: 0.5em;
+         
+        margin-left:2.8em ;
+        
+    }
+    .feature{
+        height: 15em;
+    }
+    .feature img{
+        margin-top: 1.355em;
+        padding-left: 0.5em;
+    }
+    article #items-wrapper{
+        margin-left: 4.5em;
+        width: 90vw;
+        
+    }
+    article .item{
+        flex: none;
+        width: 50%;
+        height: 400px;
+        scroll-snap-align: start;
+        pointer-events: none;
+    }
+       
+   article .content p{
+        display: flex;
+        justify-content: center;
+    }
+    article .content{
+        margin-left: 25em;
+    }
+    article .content h2{
+        display: block;
+        width: 20em;
+       }
+       article .content p{
+        margin-left: -5em;
+        display: block;
+        width: 39em;
+       }
+
+    footer .last2 h2{
+        margin: 1.5em 12em;
+    }
+    footer .last1{
+        display: flex;
+        justify-content: space-around;
+    }
+    footer .conteudo{
+        position:relative;
+       padding: 1em;
+       left: 42%;
+    }
+    footer .conteudo p{
+        position: relative;
+        left: -9%;
+    }
+    footer .conteudo span{
+        margin-left: 6%;
+        font-family:"Raleway"; 
+    }
+    footer .conteudo a{
+        margin-left: 7%;
+        font-family:"Raleway"; 
+        color: black;
+        text-decoration: none;
+    }
+    
+
+}
